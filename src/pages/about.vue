@@ -5,7 +5,7 @@
     </h3>
     <ul class="types">
       <li class="types-item justify-center flex">
-        <img class="mr-2" src="../../src/assets/Leaf.png" height="25px" width="25px">{{ $t( "Monstera Deliciosa" ) }}
+        <img class="mr-2" src="../../src/assets/Leaf.png" height="25px" width="25px">Monstera Deliciosa
       </li>
       <li class="types-item justify-center flex">
         <img class="mr-2" src="../../src/assets/Leaf.png" height="25px" width="25px">Monstera Borsigniana
@@ -36,7 +36,6 @@
 </template>
 
 <script setup lang="ts">
-const { t } = useI18n()
 </script>
 
 <style>
