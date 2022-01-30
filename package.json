@@ -12,6 +12,7 @@
     "typecheck": "vue-tsc --noEmit"
   },
   "dependencies": {
+    "@splidejs/vue-splide": "^0.5.18",
     "@vueuse/core": "^7.5.4",
     "@vueuse/head": "^0.7.5",
     "nprogress": "^0.2.0",
@@ -25,6 +26,7 @@
   "devDependencies": {
     "@antfu/eslint-config": "^0.16.0",
     "@iconify-json/carbon": "^1.0.14",
+    "@iconify-json/noto": "^1.0.3",
     "@intlify/vite-plugin-vue-i18n": "^3.2.1",
     "@types/markdown-it-link-attributes": "^3.0.1",
     "@types/nprogress": "^0.2.0",
