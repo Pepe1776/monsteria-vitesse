@@ -32,6 +32,15 @@ useHead({
  -webkit-animation: flux 2s linear infinite;
  -o-animation: flux 2s linear infinite;
 }
+.neon-sub {
+  /* font-family: "Arizonia"; */
+  /* background-color: rgba(1, 119, 7, 0.171); */
+ text-shadow: 0 0 3vw #23ff23;
+ animation: flux 2s linear infinite;
+ moz-animation: flux 2s linear infinite;
+ -webkit-animation: flux 2s linear infinite;
+ -o-animation: flux 2s linear infinite;
+}
 /* keyframe */
 @keyframes flux {
 0%,
