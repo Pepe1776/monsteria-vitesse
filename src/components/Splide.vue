@@ -14,7 +14,7 @@ export default defineComponent({
 <template>
   <Splide :options="{ rewind: true, hasSliderWrapper: true, perPage: 1, }">
     <SplideSlide>
-      <img class="img1" src="https://images.unsplash.com/photo-1617173944883-6ffbd35d584d?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1480&q=80" label="Mostera $50" alt="Sample 1">
+      <img class="img1 blend-multiply" src="https://images.unsplash.com/photo-1617173944883-6ffbd35d584d?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1480&q=80" label="Mostera $50" alt="Sample 1">
       <h2 class="mb-6 text-2xl neon-sub">
         (Monstera Deliciosa $50)
       </h2>

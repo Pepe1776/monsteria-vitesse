@@ -17,7 +17,11 @@ const toggleLocales = () => {
     </router-link>
 
     <router-link class="icon-btn mx-2" to="/about" :title="t('button.about')">
-      <carbon-dicom-overlay />
+      <carbon-dna />
+    </router-link>
+
+    <router-link class="icon-btn mx-2" to="/feature" :title="t('button.about')">
+      <carbon-crop-growth />
     </router-link>
 
     <button class="icon-btn mx-2 !outline-none" :title="t('button.toggle_dark')" @click="toggleDark()">
