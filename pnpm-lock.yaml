@@ -3,6 +3,8 @@ lockfileVersion: 5.3
 specifiers:
   '@antfu/eslint-config': ^0.16.0
   '@iconify-json/carbon': ^1.0.14
+  '@iconify-json/emojione': ^1.0.2
+  '@iconify-json/flat-color-icons': ^1.0.1
   '@iconify-json/noto': ^1.0.3
   '@intlify/vite-plugin-vue-i18n': ^3.2.1
   '@splidejs/vue-splide': ^0.5.18
@@ -59,6 +61,8 @@ dependencies:
 devDependencies:
   '@antfu/eslint-config': 0.16.0_eslint@8.7.0+typescript@4.5.5
   '@iconify-json/carbon': 1.0.14
+  '@iconify-json/emojione': 1.0.2
+  '@iconify-json/flat-color-icons': 1.0.1
   '@iconify-json/noto': 1.0.3
   '@intlify/vite-plugin-vue-i18n': 3.2.1_vite@2.7.13+vue-i18n@9.1.9
   '@types/markdown-it-link-attributes': 3.0.1
@@ -1417,6 +1421,18 @@ packages:
 
   /@iconify-json/carbon/1.0.14:
     resolution: {integrity: sha512-nPJtOG2wmGwSek4wFoQWOecQKhIuav2qBFXqDWQl+vfqwqwCEYloUrFzedqhwhFv1AO/P81CY+F919YuYWgCXA==}
+    dependencies:
+      '@iconify/types': 1.0.12
+    dev: true
+
+  /@iconify-json/emojione/1.0.2:
+    resolution: {integrity: sha512-sgkR2+DXJBt2J5wlmly8UzgGEUryRp9dST6vlXylIV32WALv0Lpa61bjPBFBoq7fw+wLBC4YrjupPFyCzeKrRQ==}
+    dependencies:
+      '@iconify/types': 1.0.12
+    dev: true
+
+  /@iconify-json/flat-color-icons/1.0.1:
+    resolution: {integrity: sha512-DR3HpDChS34i1KcyRHp6/VHStshztmFCdKkjGfY6Uy/R6ciTT0lb49AhHQF2cQtQx4MR5ntc9TVXnt/VqakzzQ==}
     dependencies:
       '@iconify/types': 1.0.12
     dev: true

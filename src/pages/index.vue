@@ -1,24 +1,14 @@
-<script setup lang="ts">
-import '../components/Splide.vue'
-import { useUserStore } from '~/stores/user'
-import '../components/Thumb.vue'
+<template>
+  <div class="main">
+    <Store />
+  </div>
+</template>
 
-const user = useUserStore()
-const name = ref(user.savedName)
-
-const router = useRouter()
-const go = () => {
-  if (name.value)
-    router.push(`/hi/${encodeURIComponent(name.value)}`)
-}
-
-const { t } = useI18n()
+<script lang="ts">
+import '../components/Store.vue'
 </script>
 
-<template>
-  <Splide />
-  <!-- <Thumb /> -->
-</template>
+<style></style>
 
 <route lang="yaml">
 meta:

@@ -17,11 +17,11 @@ const toggleLocales = () => {
     </router-link>
 
     <router-link class="icon-btn mx-2" to="/about" :title="t('button.about')">
-      <carbon-dna />
+      <emojione-leaf-fluttering-in-wind />
     </router-link>
 
     <router-link class="icon-btn mx-2" to="/feature" :title="t('button.about')">
-      <carbon-crop-growth />
+      <flat-color-icons-video-call />
     </router-link>
 
     <button class="icon-btn mx-2 !outline-none" :title="t('button.toggle_dark')" @click="toggleDark()">
@@ -29,9 +29,9 @@ const toggleLocales = () => {
       <carbon-sun v-else />
     </button>
 
-    <a class="icon-btn mx-2" :title="t('button.toggle_langs')" @click="toggleLocales">
+    <!-- <a class="icon-btn mx-2" :title="t('button.toggle_langs')" @click="toggleLocales">
       <carbon-language />
-    </a>
+    </a> -->
 
     <a class="icon-btn mx-2" rel="noreferrer" href="https://github.com/pepe1776" target="_blank" title="GitHub">
       <carbon-logo-github />

@@ -13,7 +13,7 @@ useHead({
 
 <template>
   <router-link to="/">
-    <h1 class="animate-pulse neon-title text-7xl justify-center flex ">
+    <h1 class="neon-title text-7xl justify-center flex ">
       Monsteria
     </h1>
   </router-link>
@@ -80,8 +80,8 @@ color: var(--prm4);
 53%,
 57%,
 100% {
-text-shadow: 0 0 4px $primary-blue, 0 0 11px $primary-blue, 0 0 19px $primary-blue,
-0 0 40px $primary-blue;
+text-shadow: 0 0 4px var(--prm), 0 0 11px var(--prm), 0 0 19px var(--prm),
+0 0 40px var(--prm);
 }
 
 20%,
