@@ -12,13 +12,31 @@ useHead({
 </script>
 
 <template>
-  <h1 class="animate-pulse neon-title text-7xl justify-center flex ">
-    Monsteria
-  </h1>
+  <router-link to="/">
+    <h1 class="animate-pulse neon-title text-7xl justify-center flex ">
+      Monsteria
+    </h1>
+  </router-link>
   <router-view />
 </template>
 
 <style>
+//Css Variables
+* {
+  --lit: #e9f9ef;
+  --prm5: #99e2b4;
+  --prm4: #88d4ab;
+  --prm3: #78c6a3;
+  --prm2: #67b99a;
+  --prm1: #56ab91;
+  --prm: #469d89;
+  --drk: #358f80;
+  --drk2: #248277;
+  --drk3: #14746f;
+  --drk4: #036666;
+  --drkx: #011e1e;
+}
+
 @font-face {
   font-family: "Arizonia";
   src: url("./assets/Arizonia-Regular.ttf");
@@ -26,7 +44,7 @@ useHead({
 .neon-title {
   font-family: "Arizonia";
   /* background-color: rgba(1, 119, 7, 0.171); */
- text-shadow: 0 0 3vw #23ff23;
+ text-shadow: 0 0 3vw var(--prm5);
  animation: flux 3s linear infinite;
  moz-animation: flux 3s linear infinite;
  -webkit-animation: flux 3s linear infinite;
@@ -35,7 +53,7 @@ useHead({
 .neon-sub {
   /* font-family: "Arizonia"; */
   /* background-color: rgba(1, 119, 7, 0.171); */
- text-shadow: 0 0 3vw #23ff23;
+ text-shadow: 0 0 3vw var(--prm5);
  animation: flux 3s linear infinite;
  moz-animation: flux 3s linear infinite;
  -webkit-animation: flux 3s linear infinite;
@@ -45,12 +63,12 @@ useHead({
 @keyframes flux {
 0%,
 100% {
-text-shadow: 0 0 1vw #03941b;
-color: #00ff2a;
+text-shadow: 0 0 1vw var(--drk);
+color: var(--prm);
 }
 50% {
-text-shadow: 0 0 0.5vw #026e0b;
-color: #357c06;
+text-shadow: 0 0 0.5vw var(--drk);
+color: var(--prm4);
 }
 }
 
