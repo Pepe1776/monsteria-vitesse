@@ -12,6 +12,7 @@ useHead({
 </script>
 
 <template>
+  <Footer />
   <router-link to="/">
     <h1 class="neon-title text-7xl justify-center flex ">
       Monsteria

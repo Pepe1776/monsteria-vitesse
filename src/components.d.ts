@@ -4,21 +4,18 @@
 
 declare module 'vue' {
   export interface GlobalComponents {
-    CarbonCropGrowth: typeof import('~icons/carbon/crop-growth')['default']
-    CarbonDna: typeof import('~icons/carbon/dna')['default']
-    CarbonLanguage: typeof import('~icons/carbon/language')['default']
     CarbonLogoGithub: typeof import('~icons/carbon/logo-github')['default']
     CarbonMoon: typeof import('~icons/carbon/moon')['default']
     CarbonShoppingCartPlus: typeof import('~icons/carbon/shopping-cart-plus')['default']
     CarbonSun: typeof import('~icons/carbon/sun')['default']
+    Cart: typeof import('./components/Cart.vue')['default']
     Counter: typeof import('./components/Counter.vue')['default']
-    'Emojione:leafFlutteringInWind': typeof import('~icons/emojione/leaf-fluttering-in-wind')['default']
     EmojioneLeafFlutteringInWind: typeof import('~icons/emojione/leaf-fluttering-in-wind')['default']
     Feature: typeof import('./components/Feature.vue')['default']
-    'FlatColorIcons:videoCall': typeof import('~icons/flat-color-icons/video-call')['default']
     FlatColorIconsVideoCall: typeof import('~icons/flat-color-icons/video-call')['default']
     Footer: typeof import('./components/Footer.vue')['default']
     NotoPottedPlant: typeof import('~icons/noto/potted-plant')['default']
+    ProductCard: typeof import('./components/productCard.vue')['default']
     README: typeof import('./components/README.md')['default']
     Splide: typeof import('./components/Splide.vue')['default']
     Store: typeof import('./components/Store.vue')['default']

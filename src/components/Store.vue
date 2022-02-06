@@ -57,8 +57,7 @@
     </div>
     <div class="details">
       <p class="mb-10">
-        Recusandae veritatis odio maiores numquam similique ipsa ea nostrum odit eum deleniti in culpa doloremque magni voluptatibus aperiam maxime dolorum nobis nihil, quia vitae architecto omnis labore unde. Impedit, laboriosam?
-        Ut rem cum eum hic, esse voluptatem eius. Deserunt, cum. Velit at deleniti dignissimos, est itaque mollitia sapiente voluptatibus omnis? Explicabo, quidem fugiat reiciendis itaque vel culpa non veritatis aspernatur!
+        Recusandae veritatis odio maiores numquam similique ipsa ea nostrum odit eum deleniti in
       </p>
     </div>
     <ul class="types">
