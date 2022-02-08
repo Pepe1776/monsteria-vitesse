@@ -1,7 +1,18 @@
 <template>
-<div class="container flex flex-col text-center justify-start">
+  <div class="container flex flex-col text-center justify-start">
     <h3 class="types-title neon-title text-6xl">
       Store
+      <header class="shadow">
+        <div class="mx-auto max-w-7xl px-4 py-6 sm:px-6 lg:px-8">
+          <router-link to="/cart">
+            <h1
+              class="mt-10 ml-2 bg-green-400/50  rounded-xl fixed top-0 left-0 text-3xl font-bold leading-tight text-gray-900 flex"
+            >
+              <carbon-shopping-cart /> {{ counter }}
+            </h1>
+          </router-link>
+        </div>
+      </header>
     </h3>
     <div class="grid grid-cols-1 grid-rows-6 ">
       <div class="card">
@@ -10,7 +21,7 @@
           Monstera Deliciosa  $55
         </h4>
         <h4 class="mt-4 price neon-sub text-stroke-md text-4xl">
-          <carbon-shopping-cart-plus />
+          <carbon-shopping-cart-plus class="ctn" @click="counter ++" />
         </h4>
         <p>--small house plant in 3 gallon potted plant--</p>
       </div>
@@ -20,7 +31,7 @@
           Anthurium Clarinervium  $45
         </h4>
         <h4 class="mt-4 price neon-sub text-stroke-md text-4xl">
-          <carbon-shopping-cart-plus />
+          <carbon-shopping-cart-plus class="ctn" @click="counter ++" />
         </h4>
         <p>--small house plant in 3 gallon potted plant--</p>
       </div>
@@ -30,7 +41,7 @@
           Mini Monstera  $30
         </h4>
         <h4 class="mt-4 price neon-sub text-stroke-md text-4xl">
-          <carbon-shopping-cart-plus />
+          <carbon-shopping-cart-plus class="ctn" @click="counter ++" />
         </h4>
         <p>--small house plant in 3 gallon potted plant--</p>
       </div>
@@ -40,7 +51,7 @@
           Snake Plant  $50
         </h4>
         <h4 class="mt-4 price neon-sub text-stroke-md text-4xl">
-          <carbon-shopping-cart-plus />
+          <carbon-shopping-cart-plus class="ctn" @click="counter ++" />
         </h4>
         <p>--small house plant in 3 gallon potted plant--</p>
       </div>
@@ -50,7 +61,7 @@
           Caladium  $25
         </h4>
         <h4 class="mt-4 price neon-sub text-stroke-md text-4xl">
-          <carbon-shopping-cart-plus />
+          <carbon-shopping-cart-plus class="ctn" @click="counter ++" />
         </h4>
         <p>--small house plant in 3 gallon potted plant--</p>
       </div>
@@ -93,6 +104,9 @@
 </template>
 
 <script setup lang="ts">
+import { ref } from 'vue'
+
+const counter = ref(0)
 </script>
 
 <style scoped>
@@ -106,9 +120,13 @@ border: 2px solid var(--prm);
 margin-top: 10px;
 overflow: hidden;
 }
-.card:active {
-  background-color: var(--drk4)
+.ctn:active {
+  transform: translateY(10px);
+  opacity: 0.5;
 }
+/* .card:active {
+  background-color: var(--drk4)
+} */
 .img {
   width: 380px;
   height: 400px;

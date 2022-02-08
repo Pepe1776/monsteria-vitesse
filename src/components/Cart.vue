@@ -16,7 +16,7 @@ const total = computed(() => {
     if (item.inStock)
       initialSum = initialSum + (item.price * item.qty)
   }, 0)
-  return initialSum, sum
+  return { cart, sum}
 })
 
 function removeItem(id: number) {
@@ -28,18 +28,17 @@ function removeItem(id: number) {
 <template>
   <div>
     <h1>Cart</h1>
-  <div v-for="(item,index) in displayCart" :key="index">
-    <div v-if="item.inStock">
-      <div>{{ item.name }}</div>
-      <div>{{ item.currency }}{{ item.price }}</div>
-      <div>{{ item.qty }}</div>
-      <div>{{ item.color }}</div>
+    <div v-for="(item, index) in displayCart" :key="index">
+      <div v-if="item.inStock">
+        <div>{{ item.name }}</div>
+        <div>{{ item.currency }}{{ item.price }}</div>
+        <div>{{ item.qty }}</div>
+      </div>
+      <!-- <div v-else="{{'Item ${item.name} was in stock when you added in the cart but i snow out of stock' }}" /> -->
+      <button @click="removeItem(item.id)">
+        remove
+      </button>
     </div>
-    <div v-else="{{'Item" ${item.name} was in stock when you added in the cart but i snow out of stock' }} />
-    <button @click="removeItem(item.id)">
-      remove
-    </button>
-  </div>
-  <div>Total {{ total }}</div>
+    <div>Total {{ total }}</div>
   </div>
 </template>

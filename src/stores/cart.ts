@@ -64,7 +64,7 @@ export const useCartStore = defineStore('cart', {
           qty: ci.qty,
           color: requiredProduct[0].color,
           currency: requiredProduct[0].currency,
-          instock: requiredProduct[0].stock >= ci.qty ? true : false
+          instock: requiredProduct[0].stock >= ci.qty,
         }
       })
     }

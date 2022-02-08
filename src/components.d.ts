@@ -6,6 +6,7 @@ declare module 'vue' {
   export interface GlobalComponents {
     CarbonLogoGithub: typeof import('~icons/carbon/logo-github')['default']
     CarbonMoon: typeof import('~icons/carbon/moon')['default']
+    CarbonShoppingCart: typeof import('~icons/carbon/shopping-cart')['default']
     CarbonShoppingCartPlus: typeof import('~icons/carbon/shopping-cart-plus')['default']
     CarbonSun: typeof import('~icons/carbon/sun')['default']
     Cart: typeof import('./components/Cart.vue')['default']
