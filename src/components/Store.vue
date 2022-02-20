@@ -1,6 +1,6 @@
 <template>
-  <div class="container flex flex-col text-center justify-start">
-    <h3 class="types-title neon-title text-6xl">
+  <div class="container flex flex-col text-center justify-center">
+    <h3 class="types-title neon-title text-6xl flex justify-center">
       Store
       <header class="shadow">
         <div class="mx-auto max-w-7xl px-4 py-6 sm:px-6 lg:px-8">
@@ -14,9 +14,9 @@
         </div>
       </header>
     </h3>
-    <div class="grid grid-cols-1 grid-rows-6 ">
-      <div class="card">
-        <img class="img" src="https://images.unsplash.com/photo-1614594975525-e45190c55d0b?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1364&q=80">
+    <div class="grid grid-cols-1 grid-rows-6 place-items-center">
+      <div class="card grid-row-1 flex flex-col justify-center">
+        <img class="img flex justify-center " src="https://images.unsplash.com/photo-1614594975525-e45190c55d0b?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1364&q=80">
         <h4 class="neon-sub text-4xl mt-2">
           Monstera Deliciosa  $55
         </h4>
@@ -25,7 +25,7 @@
         </h4>
         <p>--small house plant in 3 gallon potted plant--</p>
       </div>
-      <div class="card grid-row-1">
+      <div class="card grid-row-2">
         <img class="img" src="https://images.unsplash.com/photo-1609340942215-4f9bfe38593f?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1365&q=80">
         <h4 class="neon-sub text-4xl mt-2">
           Anthurium Clarinervium  $45
@@ -35,7 +35,7 @@
         </h4>
         <p>--small house plant in 3 gallon potted plant--</p>
       </div>
-      <div class="card grid-row-2">
+      <div class="card grid-row-3">
         <img class="img" src="https://images.unsplash.com/photo-1612363228106-c94b0754e2c1?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1364&q=80">
         <h4 class="neon-sub text-4xl mt-2">
           Mini Monstera  $30
@@ -55,7 +55,7 @@
         </h4>
         <p>--small house plant in 3 gallon potted plant--</p>
       </div>
-      <div class="card">
+      <!-- <div class="card">
         <img class="img" src="https://images.unsplash.com/photo-1603436326446-74e2d65f3168?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=471&q=80">
         <h4 class="neon-sub text-4xl mt-2">
           Caladium  $25
@@ -64,19 +64,14 @@
           <carbon-shopping-cart-plus class="ctn" @click="counter ++" />
         </h4>
         <p>--small house plant in 3 gallon potted plant--</p>
-      </div>
-    </div>
-    <div class="details">
-      <p class="mb-10">
-        Recusandae veritatis odio maiores numquam similique ipsa ea nostrum odit eum deleniti in
-      </p>
+      </div> -->
     </div>
     <ul class="types">
-      <li class="types-item justify-center flex mt-4">
-        <img class="mr-2" src="../../src/assets/Leaf.png" height="25px" width="25px">Monstera Deliciosa
+      <li class="types-item justify-center flex">
+        <img class="flex justify-center" src="../../src/assets/Leaf.png" height="25px" width="25px">Monstera Deliciosa
       </li>
       <li class="types-item justify-center flex mt-4">
-        <img class="mr-2" src="../../src/assets/Leaf.png" height="25px" width="25px">Monstera Borsigniana
+        <img class="" src="../../src/assets/Leaf.png" height="25px" width="25px">Monstera Borsigniana
       </li>
       <li class="types-item justify-center flex mt-4">
         <img class="mr-2" src="../../src/assets/Leaf.png" height="25px" width="25px">Monstera Variegata
@@ -128,13 +123,16 @@ overflow: hidden;
   background-color: var(--drk4)
 } */
 .img {
-  width: 380px;
-  height: 400px;
+
   }
 .title {}
 .details {
   margin-top: -600px;
 }
+@media (min-width: 425px) {
+
+}
+
 </style>
 
 <route lang="yaml">
